@@ -1,4 +1,7 @@
 ﻿
+	body {
+	background-color: silver;
+	}
 	ul {font-family: Arial, sans-serif;
     list-style-type: upper-latin;
     color: maroon;
