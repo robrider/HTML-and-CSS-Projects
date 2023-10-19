@@ -10,3 +10,6 @@
     list-style-type: upper-roman;
     color: blue;
 	}
+	h1, ul, ol {
+	text-shadow: 2px 2px black;
+	}
