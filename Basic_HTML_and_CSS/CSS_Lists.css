@@ -1,0 +1,9 @@
+﻿
+	ul {font-family: Arial, sans-serif;
+    list-style-type: upper-latin;
+    color: maroon;
+	}
+	ol {font-family: Times New Roman, sans-serif;
+    list-style-type: upper-roman;
+    color: blue;
+	}

@@ -1,0 +1,33 @@
+
+	body {
+	background-color: black;
+	}
+	h1 {
+	background-color: blue;
+	color: darkred;
+	font-size: large;
+	text-align: center;
+	}
+	h2 {
+	background-color: blue;
+	color: yellow;
+	font-size: large;
+	text-align: left;
+	}
+	h3 {
+	color: darkorange;
+	font-family: verdana;
+	font-size: 500%;
+	text-align: center;
+	}
+
+	.myStyle {
+	background-color: red;
+	color: black;
+	font-family: verdana;
+	font-size: 300%;
+
+		
+/*Turn in HTML_3 & CSS_2 Together for grading*/
+	
+	
