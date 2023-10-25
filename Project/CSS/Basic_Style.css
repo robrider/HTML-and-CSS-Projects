@@ -67,7 +67,7 @@ text-shadow: 2px 1px 4px rgba(0, 0, 0, 0.8);
        HOVER TRANSLATE & TRANSFORM EFFECTS
 ----------------------------------------------------------------*/
 .container .squares:nth-child(-n+4):hover{
-    background-image: url(..images/iconc/smileyface1.png);
+    background-image: url("../images/icons/smileyface1.png");
 }
 
 .squares:nth-child(1):hover{
