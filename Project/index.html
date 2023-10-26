@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columns Example</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>This is the content of column 1.</p>
+        </div>
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>This is the content of column 2.</p>
+        </div>
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>This is the content of column 3.</p>
+        </div>    
+            <table>
+                <colgroup>
+                  <col span="2" style="background-color:red">
+                  <col style="background-color:yellow">
+                </colgroup>
+                <tr>
+                  <th>ISBN</th>
+                  <th>Title</th>
+                  <th>Price</th>
+                </tr>
+                <tr>
+                  <td>3476896</td>
+                  <td>My first HTML, should have got the book!</td>
+                  <td>$53</td>
+                </tr>
+              </table>
+        </div>
+    </div>
+</body>
+</html>
