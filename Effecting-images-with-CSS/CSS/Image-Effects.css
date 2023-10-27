@@ -40,6 +40,15 @@ h1 {
 	color: #E91c1c;
 	text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
 }
+h1::after{
+    display:block;
+    content:"";
+    height: 2px;
+    width: 150px;
+    background: #e91c1c;
+    margin: 5px auto 40px;
+    box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
+}
 h2 { line-height: 50px;
     color: #E91C1C;
 }
