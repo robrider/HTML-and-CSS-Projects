@@ -319,7 +319,7 @@ Photo Overlay Transitions
 
 .photo-overlay {
     opacity: 0;
-    transition: opacity 5s;
+    transition: opacity 2s;
     border-radius: 10px;
     cursor: pointer;
 }
