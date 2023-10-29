@@ -1,0 +1,24 @@
+/*========================================
+Author: Robert Harter
+CSS Style Sheet for 1PWS
+========================================*/
+
+/* Set width of the inputs */
+input[type="text"] {
+    width: 300px;
+}
+
+/* Set margin between the inputs */
+input[type="text"] {
+    margin-bottom: 10px;
+}
+
+/* Set border of the inputs */
+input[type="text"] {
+    border: 1px solid #ccc;
+}
+
+/* Set border radius of the inputs */
+input[type="text"] {
+    border-radius: 5px;
+}
