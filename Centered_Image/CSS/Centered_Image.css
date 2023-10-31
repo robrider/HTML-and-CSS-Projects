@@ -1,0 +1,223 @@
+        /* CSS */
+        /* The navigation bar */
+        .navbar {
+            overflow: hidden;
+            position: fixed;
+            /* Set the navbar to fixed position */
+            background-color: #333;
+            position: fixed;
+            /* Set the navbar to fixed position */
+            top: 0;
+            /* Position the navbar at the top of the page */
+            width: 100%;
+            /* Full width */
+            z-index: 1000;
+            /* Adjust the z-index to ensure the navbar stays on top */
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Links inside the navbar */
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change background on mouse-over */
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+            z-index: 1;
+        }
+
+        /* Main content */
+        .main {
+            margin-top: 30px;
+            /* Add a top margin to avoid content overlay */
+        }
+
+
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            border-radius: 50%;
+        }
+
+        #example2 {
+            border: 2px solid rgb(0, 65, 205);
+            border-radius: 15px 50px;
+        }
+
+        img {
+            filter: grayscale(100%);
+        }
+
+        body {
+            background-color: rgb(73, 67, 48);
+            /* Best fix to Allow background to hide white space*/
+        }
+
+        .footer {
+            text-align: center;
+            font-weight: 900;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        #customers {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        #customers td,
+        #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #customers tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customers tr:hover {
+            background-color: #0a65ed;
+        }
+
+        #customers th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #040355;
+            color: white;
+        }
+
+        /* Container holding the image and the text */
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+            z-index: 0;
+        }
+        
+        .container {
+            position: relative;
+            width: 50%;
+            filter: grayscale(0%);
+        }
+        
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #008CBA;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        /* Bottom left text */
+        .bottom-left {
+            position: absolute;
+            bottom: 35px;
+            left: 16px;
+        }
+
+        /* Top left text */
+        .top-left {
+            position: absolute;
+            top: 8px;
+            left: 16px;
+        }
+
+        /* Top right text */
+        .top-right {
+            position: absolute;
+            top: 8px;
+            right: 16px;
+        }
+
+        /* Bottom right text */
+        .bottom-right {
+            position: absolute;
+            bottom: 35px;
+            right: 16px;
+        }
+
+        /* Centered text */
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Create two equal columns that sits next to each other */
+            {
+            box-sizing: border-box;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        a:hover {
+            background-color: #FCCB1A;
+        }
+
+        p.hover-effect:hover {
+            background-color: rgb(80, 15, 186);
+            color: white;
+        }
+
+        .column {
+            flex: 50%;
+            padding: 10px;
+            height: 300px;
+            height: 200px;
+            width: 50%;
+            background-color #333
+            /* Should be removed. Only for demonstration */
