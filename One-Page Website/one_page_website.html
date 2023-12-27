@@ -6,7 +6,7 @@
     <title>TreeHouse | AirBnB</title>
     <link rel="stylesheet" href=".\CSS\one-page-website.css">
     <link rel="stylesheet" href=".\CSS\one-page-animations.css">
-    background-color: #0d5f3d;;
+    <script src="CSS\JS\one_page_website.js"></script>
 </head>
     <style>
         body {
@@ -48,7 +48,7 @@
                 <div class="photo-container">
                     <div class="photo">
                         <img src=".\Images\TH1.jpg" alt="Go visit the Mother in comfort!">
-                        <div class="photo-overlay">
+                        <div onclick="openModal();currentSlide(1)" class="photo-overlay">
                             <h3 class="white-head">Click to Enlarge</h3>
                             <p> We have several canopy locations available to book today!</p>
                         </div>
@@ -60,7 +60,7 @@
                 <div class="photo-container">
                     <div class="photo">
                         <img src=".\Images\TH2.jpg" alt="One of the best views">
-                        <div class="photo-overlay">
+                        <div onclick="openModal();currentSlide(2)" class="photo-overlay">
                             <h3 class="white-head">Click to Enlarge</h3>
                             <p> Stay high up in the Trees today!</p>
                         </div>
@@ -72,7 +72,7 @@
                 <div class="photo-container">
                     <div class="photo">
                         <img src=".\Images\TH3.webp" alt="Swim in a floating pool!">
-                        <div class="photo-overlay">
+                        <div onclick="openModal();currentSlide(3)" class="photo-overlay">
                             <h3 class="white-head">
                                 Click to Enlarge
                             </h3>
@@ -89,7 +89,7 @@
                 <div class="photo-container">
                     <div class="photo">
                         <img src=".\Images\TH4.jpg" alt="Oh so Modern!">
-                        <div class="photo-overlay">
+                        <div onclick="openModal();currentSlide(4)" class="photo-overlay">
                             <h3 class="white-head">
                                 Click to Enlarge
                             </h3>
@@ -106,7 +106,7 @@
                 <div class="photo-container">
                     <div class="photo">
                         <img src=".\Images\TH5.jpg" alt="Head back home to your childhood tree!">
-                        <div class="photo-overlay">
+                        <div onclick="openModal();currentSlide(5)" class="photo-overlay">
                             <h3 class="white-head">
                                 Click to Enlarge
                             </h3>
@@ -123,14 +123,13 @@
                 <div class="photo-container">
                     <div class="photo">
                         <img src=".\Images\TH6.jpg" alt="Feels like your outside, but it is comrortable!">
-                        <div class="photo-overlay">
+                        <div onclick="openModal();currentSlide(6)" class="photo-overlay">
                             <h3 class="white-head">
                                 Click to Enlarge
                             </h3>
                             <p>We have several
                                 Trees around the world,
-                                book your elevated stay
-                                today!</p>
+                                elevate your stay!</p>
                         </div>
                     </div>
                 </div>
@@ -140,7 +139,7 @@
                 <div class="photo-container">
                     <div class="photo">
                         <img src=".\Images\TH7.jpg" alt="Classic A-frame deep in the woods!">
-                        <div class="photo-overlay">
+                        <div onclick="openModal();currentSlide(7)" class="photo-overlay">
                             <h3 class="white-head">
                                 Click to Enlarge
                             </h3>
@@ -157,7 +156,7 @@
                 <div class="photo-container">
                     <div class="photo">
                         <img src=".\Images\TH8.jpg" alt="Luxurious inside, woods outside!">
-                        <div class="photo-overlay">
+                        <div onclick="openModal();currentSlide(8)" class="photo-overlay">
                             <h3 class="white-head">
                                 Click to Enlarge
                             </h3>
@@ -174,7 +173,7 @@
                 <div class="photo-container">
                     <div class="photo">
                         <img src=".\Images\TH9.jpg" alt="Surfside Treehouse!">
-                        <div class="photo-overlay">
+                        <div onclick="openModal();currentSlide(9)" class="photo-overlay">
                             <h3 class="white-head">
                                 Click to Enlarge
                             </h3>
@@ -189,9 +188,6 @@
             </div>
         </div>
     </section>
-
-
-
     <!--END Gallery-->
 
     <!--RSVP-->
@@ -233,7 +229,63 @@
     <div id="footer">
         www.theTreehouse@GetOutside.climb &nbsp; &copy; 2023</p>
     </div>
-    <!-- END FOOTER -->
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 9</div>
+        <img src="Images\TH1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 9</div>
+        <img src="Images\TH2.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 9</div>
+        <img src="Images\TH3.webp" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 9</div>
+        <img src="Images\TH4.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">5 / 9</div>
+        <img src="Images\TH5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 9</div>
+        <img src="Images\TH6.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">7 / 9</div>
+        <img src="Images\TH7.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">8 / 9</div>
+        <img src="Images\TH8.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">9 / 9</div>
+        <img src="Images\TH9.jpg" style="width:100%">
+      </div>
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption">
+      </div>
 
 </body>
 
