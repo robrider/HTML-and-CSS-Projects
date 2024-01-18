@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p id="myText">Hello Skunks, Squirrels & Rocky Raccoons!?!?</p>
+    
+    <!-- Button for Current Date -->
+    <button onclick="displayCurrentDate()">Click for Current Date!</button>
+    <!-- Output for Current Date -->
+    <p id="demo"></p>
+    <br>
+
+    <!-- Button to Display Movie Info -->
+    <button onclick="displayMovieInfo()">Click to Display Movie Info!</button>
+    <!-- Display var Movie -->
+    <div>
+      <p id="XMLExample"></p>
+    </div>
+    <br>
+
+    <!-- Button for var Muzik -->
+    <button onclick="displayMuzikList()">Click to Display Muzik List!</button>
+    <!-- Muzik list -->
+    <ul id="muzikList"></ul>
+    <br>
+
+    <!-- Button to Change Paragraph Text -->
+    <button onclick="changeText()">Click to Change Paragraph Text!</button>
+    <!--Click here-->
+    <p id="myParagraph">This is a sample paragraph.</p>
+
+    <script>
+      var XML_Parser, XML_Document;
+
+      // Creates a text string with updated year
+      var Movie =
+        "<movie>" +
+        "<title>Sisu</title>" +
+        "<director>Jalmari Helander</director>" +
+        "<starring>Onni Tommila</starring>" +
+        "<year>2023</year>" +
+        "</movie>";
+
+      // Creates an XML DOM parser
+      XML_Parser = new DOMParser();
+
+      // Creates a new XML DOM object using the text string
+      XML_Document = XML_Parser.parseFromString(Movie, "text/xml");
+
+      // Function to display current date
+      function displayCurrentDate() {
+        var currentDate = new Date();
+        document.getElementById('demo').innerHTML = currentDate;
+      }
+
+      // Function to display movie information
+      function displayMovieInfo() {
+        var xmlExample = document.getElementById("XMLExample");
+        xmlExample.innerHTML =
+          "Title: " +
+          XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue +
+          "<br />Director: " +
+          XML_Document.getElementsByTagName("director")[0].childNodes[0].nodeValue +
+          "<br />Starring: " +
+          XML_Document.getElementsByTagName("starring")[0].childNodes[0].nodeValue +
+          "<br />Year: " +
+          XML_Document.getElementsByTagName("year")[0].childNodes[0].nodeValue;
+      }
+
+      // Function to display Muzik list
+      function displayMuzikList() {
+        var muzikList = document.getElementById("muzikList");
+        muzikList.innerHTML =
+          "<li>The Beatles</li>" +
+          "<li>David Bowie</li>" +
+          "<li>The B-52s</li>" +
+          "<li>Wild Cherry</li>" +
+          "<li>Nirvana</li>" +
+          "<li>Foofighters</li>";
+      }
+
+      // Function to change paragraph text
+      function changeText() {
+        var paragraph = document.getElementById("myParagraph");
+        paragraph.innerHTML = "This paragraph text has been changed! Hmmm, Did you see it?";
+      }
+    </script>
+  </body>
+</html>
